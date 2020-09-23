@@ -60,6 +60,6 @@ app.post("/",function(req,res) {
 app.post("failure",function(){
   res.redirect("/");
 })
-app.listen(process.eve.PORT || 3000,function(){
+app.listen(process.env.PORT || 3000,function(){
   console.log("server port running on port 3000");
 });
